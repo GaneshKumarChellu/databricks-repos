@@ -1,0 +1,15 @@
+resources:
+  pipelines:
+    pipeline_dabs_pipeline_11:
+      name: DABS_pipeline_11
+      libraries:
+        - glob:
+            include: ../../src/DABS_pipeline_11/transformations/**
+      schema: default
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: databricks_ganesh
+      serverless: true
+      root_path: ../../src/DABS_pipeline_11
